@@ -1,14 +1,17 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background: #000;
+    background: #232325;
 }
 
 .section1 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(background.jpg);
-    background-size: contain;
-    overflow: hidden;
+    background-image: url("background.png");
+    height: 100%; 
+    
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: auto;
+
 }
