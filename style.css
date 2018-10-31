@@ -1,17 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+
 body, html {
     height: 100%;
     margin: 0;
-    background: #232325;
+    background: #232326;
+    height: 100%;
+    overflow: hidden;
 }
 
 .section1 {
-    background-image: url("background.png");
-    height: 100%; 
-    
-    /* Center and scale the image */
-    background-position: center;
+    /* background-image: url("background.png"); */
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: auto;
+    overflow: hidden;
+}
 
+.section1 h2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 200px;
+    left: 280px;
+    font-size: 6rem;
+    font-family: 'Nosifer';
+    color: orangered;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 5px 15px rgba(55, 1, 1, 0.5);
+    mix-blend-mode: color;
+}
+
+.pumpkin {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: -5%;
+    opacity: 0.8;
+    mix-blend-mode: color;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-55%,-55%);
+    }
+    
+    50% {
+        transform: translate(-57%,-55%);
+    }
+    
+    100% {
+        transform: translate(-55%,-55%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section1 {
+        /* background-image: url("background.png"); */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section1 h2 {
+        font-size: 2rem;
+    }
 }
